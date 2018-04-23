@@ -1,0 +1,108 @@
+			.container .topimg{
+				background: url(../image/banner_top.jpg) no-repeat  -76px -7px ;
+				height:220px;
+				margin:20px;
+			}
+			.container .topimg p{
+				height: 220px;
+				text-align: center;
+				margin: 10px auto;
+				font: 16px/20px "幼圆";
+				width: 100%;
+				padding: 20px;
+			    color: black;
+			    cursor: pointer;
+			    animation: easein 4s ease-in-out  ;
+			}
+			/*字进入的动画*/
+			@keyframes easein{
+				from{
+					opacity: 0;
+				    transform: rotateX(25deg) rotateY(180deg);
+				}
+				to{
+				 transform:  rotateX(0deg) rotateY(0deg);	
+				 opacity: 1;
+				}
+			}
+			.center{
+				margin-left: 30px;
+			}
+			.center .timer ul{
+				height:110px;
+			}
+			.center .timer ul li{
+				float: left;
+				width: 200px;
+				height:110px;
+				position: relative;
+			}
+			.center .timer ul li p{
+				background-position: 47px 0px;
+				margin-bottom: 10px;
+				text-align: right;
+				height: 40px;
+				position: relative;
+ 		}
+ 		.center .timer ul li p span{
+ 			display: block;
+ 			background: url(../public/image/dtime.png) no-repeat right ;
+ 			 height: 40px;
+ 			 font:16px/20px "幼圆" ;
+ 			 padding: 3px;
+ 			 position: absolute;
+ 			 left: 53px;
+ 			 top: -2px;
+ 		}
+			.center .timer ul li .line{
+				display: block;
+				border-bottom: 6px solid #FFFFFF;
+			}
+			.center .timer ul li .mark{
+				display: block;
+				width: 12px;
+				height: 12px;
+				background: #075498;
+				border: 3px solid #ffffff;
+				border-radius: 50%;
+				position: absolute;
+				top: 41%;
+				left: 14%;
+			}
+			.center .timer ul li .mark:hover{
+				background: #579DC5;
+			}
+			.center .timer ul li a{
+				  margin-left: 25px;
+				  position: absolute;
+				  bottom: 20px;
+				  font: 16px/20px "幼圆";
+			}
+			.center .timer ul li a:hover{
+				text-decoration: underline;
+			}
+			/*关于自己的介绍*/
+			.cen_content{
+				margin:20px;
+			}
+			.cen_content  .aboutme .cen_header,.cen_content  .aboutblog .cen_header{
+				border-left: 5px solid #FFFFFF;
+				width: 180px;
+				background: #075498;
+				height: 45px;
+				text-align: center;
+				font: 20px/40px  "幼圆";
+				box-shadow: -1px 1px 3px #000000;
+				border-bottom-right-radius: 20px;
+				border-top-right-radius: 20px;
+				margin-top: 20px;
+			}
+			.cen_content  .aboutme .cen_center,.cen_content  .aboutblog .cen_center{
+				margin-top: 10px;
+				padding: 15px;
+				text-indent: 2em;
+				border-radius: 5px;
+				box-shadow: 1px 1px 2px #FFFFFF;
+				font:14px/20px "幼圆";
+			}
+		 
