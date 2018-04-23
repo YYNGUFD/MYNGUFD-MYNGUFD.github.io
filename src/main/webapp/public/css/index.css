@@ -52,7 +52,7 @@
 			.blog figure p a{
 				display: block;
 				color: #2A455D;
-				font: 14px/20px 700 "幼圆" ;
+				font: 14px/20px 700 "楷体" ;
 				text-align:center;
 			}
 			.blog figure figcaption { padding: 10px; line-height: 22px; color: #666; }
@@ -92,7 +92,7 @@
 				margin-top: 3px;
 						display: block;
 						text-align: center;
-						font: 20px/20px "微软雅黑";
+						font: 20px/20px "楷体";
 						color: #579DC5;
 		 }
 		 

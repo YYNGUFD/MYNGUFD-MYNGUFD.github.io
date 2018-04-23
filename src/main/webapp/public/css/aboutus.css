@@ -7,7 +7,7 @@
 				height: 220px;
 				text-align: center;
 				margin: 10px auto;
-				font: 16px/20px "幼圆";
+				font: 16px/20px "楷体";
 				width: 100%;
 				padding: 20px;
 			    color: black;
@@ -48,7 +48,7 @@
  			display: block;
  			background: url(../public/image/dtime.png) no-repeat right ;
  			 height: 40px;
- 			 font:16px/20px "幼圆" ;
+ 			 font:16px/20px "楷体" ;
  			 padding: 3px;
  			 position: absolute;
  			 left: 53px;
@@ -76,7 +76,7 @@
 				  margin-left: 25px;
 				  position: absolute;
 				  bottom: 20px;
-				  font: 16px/20px "幼圆";
+				  font: 16px/20px "楷体";
 			}
 			.center .timer ul li a:hover{
 				text-decoration: underline;
@@ -91,7 +91,7 @@
 				background: #075498;
 				height: 45px;
 				text-align: center;
-				font: 20px/40px  "幼圆";
+				font: 20px/40px  "楷体";
 				box-shadow: -1px 1px 3px #000000;
 				border-bottom-right-radius: 20px;
 				border-top-right-radius: 20px;
@@ -103,6 +103,6 @@
 				text-indent: 2em;
 				border-radius: 5px;
 				box-shadow: 1px 1px 2px #FFFFFF;
-				font:14px/20px "幼圆";
+				font:14px/20px "楷体";
 			}
 		 
