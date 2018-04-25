@@ -4,7 +4,301 @@
 		<meta charset="UTF-8">
 		<title>马凤艳的个人博客</title>
 		<link rel="stylesheet" href="../public/css/base.css" />
-		<link rel="stylesheet" href="../public/css/aboutus.css" />
+	   <link rel="stylesheet" type="text/css" href="../public/css/index.css"/>
+		<link rel="stylesheet" href="../public/css/self.css" />
+
+		<style>
+			.content{
+				margin: 20px;
+				overflow: hidden;
+				position: relative;
+			}
+			.content .con_header{
+				height: 40px;
+			   width: 200px;
+				text-align: center;
+				 font:25px/40px "楷体";
+				border-left: 6px solid #FFFFFF;
+				border-bottom-right-radius: 20px;
+				border-top-right-radius: 20px;
+                background: #075498;
+                float: left;
+			}
+			.content .mark{
+				display: block;
+				font:16px/40px "楷体";
+				margin-right: 10px;
+				position: absolute;
+				right: 0px;
+				
+			}
+			.content nav{
+				margin-left: 70px;
+				height: 40px;
+				margin-top: 20px;
+				
+			}
+			.content nav ul li{
+				float: left;
+				width: 120px;
+				border: 1px solid #FFFFFF;
+				margin-left: 10px;
+			    font: 14px/35px "楷体";
+			}
+			.content nav ul li a{
+				display: block;
+				width: 120px;
+				text-align: center;
+			}
+			.content nav ul li:nth-child(1):hover{
+				background: #89C9EF;
+				animation:opac 1s infinite;
+			}
+			.content nav ul li:nth-child(2):hover{
+				background: #2A7497;animation:opac 1s infinite;
+			}
+			.content nav ul li:nth-child(3):hover{
+				background: rgba(132,254,10,0.8);animation:opac 1s infinite;
+			}
+			.content nav ul li:nth-child(4):hover{
+				background: #549992;animation:opac 1s infinite;
+			}
+			.content nav ul li:nth-child(1){
+				background: #3594CB;
+			}
+			.content nav ul li:nth-child(2){
+				background: #456789;
+			}
+			.content nav ul li:nth-child(3){
+				background: #764342;
+			}
+			.content nav ul li:nth-child(4){
+				background: #897654;
+			}
+			/*点击时渐进显示*/
+			@keyframes opac{
+				from{opacity: 0.5;}
+				to{opacity: 1;}
+			}
+			.content .detailContent{
+				margin-top: 20px;
+			
+			}
+			/*个人生活的样式*/
+			.content .detailContent .selfLive .items{
+				position: relative:
+				border-radius: 5px;
+				top: 10px;
+				color: #666666;
+				display: none;
+			}
+			.content .detailContent .selfLive .item{
+				float: left;
+			     padding: 10px;
+				width: 31%;
+				background: #efefce;
+				font: 16px/18px "楷体";
+			}
+			.content .detailContent .selfLive .item img{
+				display: block;
+				width: 100%;
+				height: 228px;
+				border: 1px solid #FFFFFF;
+				box-shadow: 1px 1px 5px #060906;
+			}	
+			.content .detailContent .selfLive .item p{
+				text-indent: 2em;
+			}
+			.clearfix{
+				content:"" ;
+				height: 0;
+				visibility: hidden;
+			}
+			/*每日寄语*/
+			/*首页的右侧*/
+			 
+    .content .detailContent .selfLearn ul li{
+				width:100%;	height: 80px;
+				display: flex;
+				position: relative;
+			}
+		 .content .detailContent .selfLearn ul li .time{
+				    display: block;
+                    width: 150px;
+                     height: 80px;
+                     background: ;
+                     padding-top: 10px;
+                     border-right: 5px solid #89C9EF;
+                      position: relative;
+			
+			}
+		  .content .detailContent .selfLearn ul li .time .timer{
+		 	border-top-left-radius: 20px 20px;
+			 border-bottom-left-radius: 20px 20px;
+			
+		 }
+			  .content .detailContent .selfLearn ul li .time p{
+					text-align: center;
+					
+				}
+			  .content .detailContent .selfLearn ul li .time b{
+				margin-top: 3px;
+						display: block;
+						text-align: center;
+						font: 16px/16px "楷体";
+						color: #fff;
+		 }
+		 
+		 .content  .detailContent .selfLearn ul li:hover .time .timer{
+				background: #89C9EF;
+				animation: radious 1s;
+			}
+			@keyframes radious{
+				from{
+					border-top-left-radius: 0px;
+					border-bottom-left-radius: 0px;
+				}
+				to{
+					border-top-left-radius: 20px 20px;
+					border-bottom-left-radius: 20px 20px;
+				}
+			}
+			  .content .detailContent .selfLearn ul li .time span{
+			 	display: block;
+			 	width:10px;
+			 	height: 10px;
+			 	background: #579dc5;
+			 	border-radius: 50%;
+			 	border:3px solid #89C9EF;
+			 	position:absolute;
+			    top: 17px;
+			 	right: -9px;
+			 }
+					/*右侧的内容部分*/
+					/*动画部分*/
+			  .content .detailContent .selfLearn ul li .contentdetail{
+						-webkit-transform: translatex(0);
+						transform: translatex(0);
+						opacity: 1;
+						-webkit-transition: -webkit-transform 1s ease-in-out 0s,  opacity 1s ease-in-out 0s;
+						transition: transform 1s ease-in-out 0s, opacity 1s ease-in-out 0s;
+						-webkit-perspective: 1000;
+						-webkit-backface-visibility: hidden;
+					}
+			 .content .detailContent .selfLearn ul li .contentdetail{
+				flex: 3;
+				height: 60px;
+				background: #3594cb;
+				float: right;
+				margin-top: 3px;
+				margin-left: 25px;
+				padding:10px 0  0 10px ;
+				border-radius: 10px 10px;
+				position: relative;
+				margin-bottom: 10px;
+				/*添加动画显示*/
+			}
+			 .content  .detailContent .selfLearn ul li .contentdetail:before{
+				position: absolute;
+				top: 15px;
+					    left:-20px;
+					    border: solid transparent;
+					    content: " ";
+					    height: 0;
+					    width: 0;
+					    position: absolute;
+					    pointer-events: none;
+					    border-right-color: #3594cb;
+					    border-width: 10px;
+					    
+				}
+				  .content .detailContent .selfLearn ul li .contentdetail h5{
+				   text-align: center;
+				   padding-bottom: 5px;
+				}
+				  .content .detailContent .selfLearn ul li .contentdetail img{
+					margin-right: 10px;
+					float: left;
+				}
+		/*学习心得的排列:改变下宽度即可*/
+			.study  	figure{
+			background: #ececec;
+			width: 250px;
+			height: 400px;
+			border: #fff 10px solid;
+			overflow: hidden;
+			float: left;
+			margin: 8px 10px;
+		   animation:roll 2s ; 
+		   position:relative;
+		   
+		}
+		.study figure img{
+						width: 270px;
+					}
+				    .study figure ul span{
+				    	opacity:0;
+				    }
+					.study figure ul:hover span{
+						opacity: 1;
+					}
+					.study figure p{
+						width: 270px;
+						margin-top: 10px;
+					}
+					/*点击出现动画*/
+					.study figure ul{
+						position: relative;
+					}
+					.study figure ul span{
+						display: block;
+						background: rgba(0,0,0,0.5) url(../public/image/yu.png) no-repeat center 20px;
+						color: #FFFFFF;
+						width:100%;
+						height: 100%;
+						cursor: pointer;
+					   line-height: 260px; 
+					   text-align: center;
+					   transition:all 0.5s;
+					    text-decoration: underline;
+						
+					}
+					.study figure ul span{
+						opacity: 0;
+						position: absolute;
+						left: 0;
+						top: 0;
+						
+					}
+					.study figure p a{
+						display: block;
+						color: #2A455D;
+						font: 14px/20px 700 "楷体" ;
+						text-align:center;
+					}
+					.study figure figcaption { padding: 10px; line-height: 22px; color: #666; }
+					.study figure figcaption a{
+						display: block;
+						  width: 80px;
+						  height: 20px;
+						  background: #3594CB;
+						  border-radius: 5px;
+						  color: white;
+						  text-align: right;
+						  padding: 5px;
+						  position: absolute;
+						  bottom: 10px;
+						  right: 10px;
+					}
+					@keyframes roll{
+						from{
+								opacity: 0.2;
+						}
+						to{
+							opacity: 1;
+						}
+					}
+		</style>
 	</head>
 	<body>
 		<!--头部的导航是确定的-->
@@ -17,7 +311,155 @@
                <a href="ourStories.html"><span>我们的故事</span><span class="en">ourStories</span></a><a href="memory.html"><span>纪念日</span><span class="en">memoryData</span></a></nav>
      </header>
       <article>
-      	 <div class="container">55</div>
+      	 <div class="container">
+      	 	<div class="content">
+      	 		<div class="con_header">生活漫语</div>
+      	 		<span class="mark">有的时候生活就是这样，总会让你失望，但是你要相信自己</span> 
+      	 		<div style="clear: both;"></div>
+      	 		<nav >
+      	 			<ul >
+      	 				<li><a href="">个人生活</a></li>
+      	 				<li><a href="">每日寄语</a></li>
+      	 				<li><a href="">学习心得</a></li>
+      	 				<li><a href="">小小体会</a></li>
+      	 			</ul>
+      	 		</nav>
+      	 		 
+      	 		<div class="detailContent">
+      	 			<!--放内容的区域根据标签的点击不同，就放不同的内容-->
+      	 			<!--个人生活就是展示一些图片-->
+      	 			<div class="selfLive hide">
+      	 				  <!--展示一些图片，然后下面可以用一些文字表示出来-->
+      	 				  <!--瀑布流模式的图片-->
+      	 				  <div class="items">
+      	 				  	<div class="item">
+      	 				  		 <img src="../public/image/girl.jpg" alt="">
+                                   <p>这个图片是关于学校的图片，优美,尤其是在傍晚的夏天</p>
+      	 				  	</div>
+      	 				  </div>
+      	 				    <div class="items">
+      	 				  	<div class="item">
+      	 				  		 <img src="../public/image/girl.jpg" alt="">
+                                   <p>这个图片是关于学校的图片，优美</p>
+      	 				  	</div>
+      	 				  </div>
+      	 				    <div class="items">
+      	 				  	<div class="item">
+      	 				  		 <img src="../public/image/girl.jpg" alt="">
+                                   <p>这个图片是关于学校的图片，优美</p>
+      	 				  	</div>
+      	 				  </div>
+      	 			</div>
+      	 			<div class="selfLearn hide">
+      	 				<div>
+      	 					<ul>
+      	 						 <li>
+        					<!--时间-->	
+        				    <div class="time">
+        				    	<div class="timer">
+        				    		 <p>04-05</p><b>2016</b>
+        				    		 <span></span>
+        				    	</div>
+        					
+        					</div>
+        					<div class="contentdetail">
+        						<span></span>
+        						 <p>这个图片是关于学校的图片，优美</p>
+        					</div>
+        				</li>
+        				<li>
+        					 <div class="time">
+        				    	<div class="timer">
+        				    		 <p>04-05</p><b>2016</b>
+        				    		 <span></span>
+        				    	</div>
+        					
+        					</div>
+        					<div class="contentdetail">
+        						<span></span>
+        							<p>关于今天，就一直高兴着吧</p>
+        					</div>
+        				</li>
+        				<li>
+        				 <div class="time">
+        				    	<div class="timer">
+        				    		 <p>04-05</p><b>2016</b>
+        				    		 <span></span>
+        				    	</div>
+        					
+        					</div>
+        					<div class="contentdetail">
+        						<span></span>
+        						<p>关于今天，就一直高兴着吧</p>
+        					</div>
+        				</li>
+        				<li>
+        					 <div class="time">
+        				    	<div class="timer">
+        				    		 <p>04-05</p><b>2016</b>
+        				    		 <span></span>
+        				    	</div>
+        					
+        					</div>
+        					<div class="contentdetail">
+        						<span></span>
+        							<p>关于今天，就一直高兴着吧</p>
+        					</div>
+        				</li>
+      	 					</ul>
+      	 				</div>
+      	 			</div>
+                    <div class="study">
+			        	      <figure>
+			        		<ul>
+			        		<a href=""><img src="../public/image/t02.jpg" alt="" /></a>
+			        	     <span>一个故事</span>	
+			        		</ul>
+			        		<p>
+			        			<a href="#">关于你的</a>
+			        			<figcaption>
+			        				不知道从何时想起，不知道从哪里说起，也不知道该如何的选择
+			        					<a href="#">阅读全文>></a>
+			        			</figcaption>
+			        		
+			        		</p>
+			        	</figure>
+			        	<figure>
+			        		<ul>
+			        		<a href=""><img src="../public/image/t01.jpg" alt="" /></a>
+			        	     <span></span>	
+			        		</ul>
+			        		<p>
+			        			<a href="#">关于你的</a>
+			        			<figcaption>
+			        				不知道从何时想起，不知道从哪里说起，也不知道该如何的选择
+			        					<a href="#">阅读全文>></a>
+			        			</figcaption>
+			        		</p>
+			        	</figure>
+			        	<figure>
+			        		<ul>
+			        		<a href=""><img src="../public/image/t03.jpg" alt="" /></a>
+			        	     <span></span>	
+			        		</ul>
+			        		<p>
+			        			<a href="#">关于你的</a>
+			        			<figcaption>
+			        				不知道从何时想起，不知道从哪里说起，也不知道该如何的选择
+			        					<a href="#">阅读全文>></a>
+			        			</figcaption>
+			        		</p>
+        	           </figure>
+        	</div>
+        </div>
+       </div>
+                    <div class="realize">
+                             	
+                    </div>
+      	 		</div>
+      	 	</div>
+      	 	
+      	 </div>
       </article>
 	</body>
 </html>

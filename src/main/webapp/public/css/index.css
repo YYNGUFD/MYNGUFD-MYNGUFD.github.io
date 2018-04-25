@@ -96,7 +96,7 @@
 						color: #579DC5;
 		 }
 		 
-		 .centerarticle .content ul li .time:hover .timer{
+		 .centerarticle .content ul li:hover .time .timer{
 				background: #89C9EF;
 				animation: radious 0.5s;
 			}
