@@ -5,6 +5,151 @@
 		<title>马凤艳的个人博客</title>
 		<link rel="stylesheet" href="../public/css/base.css" />
 		<link rel="stylesheet" href="../public/css/aboutus.css" />
+		<style>
+			.ourStories{
+				margin: 10px;
+				position: relative;
+			}
+				.ourStories .nav ul{
+					width: 100%;
+					margin:0 20px;
+					overflow: hidden;
+					height: 150px;
+				}
+			.ourStories .nav ul li{
+				position:relative;
+				height: 100px;
+				border-right: 3px dashed #FFFFFF;
+			}
+			.ourStories .nav ul li:nth-child(1){
+				margin-left: 60px;
+			}
+			
+			.ourStories .nav ul li:nth-child(2){
+				margin-right: 90px;
+			}
+			.ourStories .nav ul li a{
+				display: block;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                border-radius: 50%;
+                font: 20px/50px "楷体";
+                background:#579DC5;
+                border:2px dashed #FFFFFF;
+                transform-origin: center;
+                animation:roll 4s infinite linear;
+			}
+			.ourStories .nav ul li:nth-child(2) a{
+			   position: absolute;
+				right: -28px;
+				bottom: -24%;
+			}
+				.ourStories .nav ul li:nth-child(1) a{
+			   position: absolute;
+				right: -28px;
+				bottom: -24%;
+			}
+			/*为两个标记增加动画,转*/
+		    @keyframes roll {
+        0%{
+            transform:rotate(0deg);
+        }
+
+        100%{
+            transform:rotate(360deg);
+        }
+    }
+    .ourStories .nav .someSay{
+    	position: absolute;
+    	top: 50px;
+    	left: 200px;
+    	font: 16px/20px "楷体";
+    	text-align: center;
+    	 transform: translate(-150px, 0)  ;
+          animation: leftRight 2s forwards;
+    }
+   @keyframes leftRight {
+		   	0%{
+		   		opacity: 0;
+		   	}
+		  40% {
+		    transform: translate(40px, 0) scale(.7);
+		    opacity: 1;
+		    color: #2A7497;
+		  }
+		  60% {
+		    color: #fff;
+		  }
+		  80% {
+		    transform: translate(0) scale(2);
+		    opacity: 0;
+		  }
+		  100% {
+		    transform: translateX(40px) scale(1.5);
+		    opacity: 1;
+         }
+}	
+           .ourStories .border{
+           	display: block;
+			 width: 100%;
+			 height: 5px;
+				background-image:linear-gradient(150deg, #000 0%, #000 25%, rgba(123,32,231,0.5) 25%, rgba(10,45,25,0.5) 50%, #000 50%, #000 75%, #fff 75%, #fff 100% );
+            /*background-repeat: no-repeat;*/
+            background-size:100px 100%;
+          	  animation: back 2s infinite linear;/*无限次播放*/
+           }
+           /*构建一个多条纹的边框*/
+           @keyframes back{
+           	0%{}
+           	100%{
+           		background-position: 100px 0;
+           	}
+           }
+           /*关于旅行的样式*/
+          .ourStories .travel ul{
+          	margin: 15px;
+          	cursor: pointer;
+          }
+           .ourStories .travel ul li {
+           	float: left;
+           	position: relative;
+           width: 200px;
+           }
+          .ourStories .travel ul li span{
+          	display:inline-block ;
+          }
+          .ourStories .travel ul li .adddress{
+          	  width: 50px;
+          	  height: 50px;
+          	  border-radius: 50%;
+          	  font:15px/50px "楷体";
+          	  font-weight: 700;
+          	  text-align: center;
+          	  border: 1px solid #FFFFFF;
+          	  z-index: 1;
+          }
+           .ourStories .travel ul li:nth-child(2n) .adddress{
+           	background: rgba(255,179,21,0.5);
+           }
+              .ourStories .travel ul li:nth-child(2n) .adddress:hover{
+          	background:  rgba(255,233,21,0.5);
+           }  .ourStories .travel ul li:nth-child(2n+1) .adddress:hover{
+           	  	background: rgba(45,245,21,0.5);
+           }
+            .ourStories .travel ul li:nth-child(2n+1) .adddress{
+           	background: rgba(32,179,21,0.5);
+           }
+           .ourStories .travel ul li .time{
+           	 height: 50px;
+           	 width: 150px;
+           	 background: #89C9EF;
+           	 position: absolute;
+           	 left: 40px;
+           	 border-radius: 25px 25px;
+          
+           }
+		</style>
 	</head>
 	<body>
 		<!--头部的导航是确定的-->
@@ -18,7 +163,43 @@
      </header>
       <article>
       	 <div class="container">
-      	 	我们的故事主要是记录一些关于
+      	 	<!--我们的故事主要是记录一些关于我们在一起的点点滴滴，主要有旅行和日常的生活-->
+      	 	<div class="ourStories">
+		      	 	<div class="nav">
+		      	 		<ul>
+		      	 			<li class="f_l"><a href="#">旅行</a></li>
+		      	 			<li class="f_r"><a href="#">日常</a></li>
+		      	 		</ul>
+		      	 		<div class="someSay">在一起，不是总想着改变对方，而是要接纳对方</div>
+		      	 	</div>
+		      	 	<div class="story">
+		      	 		<span class="border"></span>
+		      	 		<div class="travel">
+		      	 			 <!--怎样展现出图片和文字介绍-->
+		      	 		   <ul>
+		      	 		   	<li>
+		      	 		   		<span class="adddress">重庆1</span>
+		      	 		   		<span class="time">2015.2.03</span>
+		      	 		   		<p class="showText">看了许多优美的景色</p>
+		      	 		   		<p><a href="">阅读全文</a></p>
+		      	 		   	</li>
+		      	 		   	<li>
+		      	 		   		<span class="adddress">重庆2</span>
+		      	 		   		<span class="time">2015.2.03</span>
+		      	 		   		<p class="showText">看了许多优美的景色</p>
+		      	 		   		<p><a href="">阅读全文</a></p>
+		      	 		   	</li>
+		      	 		   	<li>
+		      	 		   		<span class="adddress">重庆3</span>
+		      	 		   		<span class="time">2015.2.03</span>
+		      	 		   		<p class="showText">看了许多优美的景色</p>
+		      	 		   		<p><a href="">阅读全文</a></p>
+		      	 		   	</li>
+		      	 		   </ul>
+		      	 		</div>
+		                <div class="daily"></div>
+		      	 	</div>
+      	 	</div>
       	 </div>
       </article>
 	</body>
