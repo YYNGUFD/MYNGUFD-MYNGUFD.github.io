@@ -1,0 +1,83 @@
+			 .memory{
+			 	margin: 10px;
+			 }
+			 .memory ul li {
+			 	margin: 10px;
+			 	position:relative;
+			 	height: 60px;
+			 	padding: 10px;
+			 }
+			  .memory ul li span:nth-child(1){
+			  	cursor:pointer;
+			  	display: inline-block;
+			  	width: 16px;
+			  	height: 16px;
+			  	background: #89C9EF;
+			  	border:3px solid #FFFFFF;
+			  	border-radius:50%;
+			  	position: relative;
+			  	transform-origin: center;
+			  	/*animation:roll 4s linear infinite;*/
+			  }
+			  /*转动的背景*/
+			 @keyframes roll{
+			 	0%{
+			 		transform:rotate(0deg);
+			 	}
+			 	100%{
+			 		transform:rotate(360deg);
+			 	}
+			 }
+			   .memory ul li span:nth-child(1):hover{
+			   	background: #2A7497;
+			   }
+			  .memory ul li span:nth-child(1):before{
+			  	position: absolute;
+			  	top: 8px;
+			  	left: 18px;
+			  	display: inline-block;
+			  	content: " ";
+			  	width: 50px;
+			  	border-top: 3px solid #FFFFFF;
+			  }
+			   .memory ul li .time{
+			   	display: inline-block;
+			   	width: 100px;
+			   	height: 25px;
+			   	font: 14px/25px "楷体";
+			   	text-align: center;
+			   	background: #89C9EF;
+			   	border-radius: 10px;
+			   	position: absolute;
+			   	top: 10px;
+			   	left: 80px;
+			   }
+			   .memory ul li .time:before{
+			   		display: inline-block;
+			   		width: 60px;
+			   		content: "";
+			   		border-top: 3px solid #FFFFFF;
+			   		position: absolute;
+			   		top: 11px;
+			   		left: 100px;
+			   }
+			   .memory ul li .text{
+			   	 display: inline-block;
+			   	 width: 645px;
+			   	 height: 30px;
+			   	 float: right;
+			   	 background: url(../image/articlebg.png);
+			   	 padding: 5px;
+			   	 position: absolute;
+			   	 top:6px;
+			   	 right: 20px;
+			   	 font: 16px/30px "楷体";
+			   	 border-left: 5px solid #FFFFFF;
+			   	  border-right: 5px solid #FFFFFF;
+			   }
+			   .memory ul li:nth-child(2n) .text{
+			   	 box-shadow: 2px -2px  4px #DAE1E4; 
+			
+			   }.memory ul li:nth-child(2n+1) .text{
+			   		 box-shadow: -2px 2px  4px #DAE1E4; 
+			   }
