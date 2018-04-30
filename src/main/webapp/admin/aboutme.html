@@ -5,50 +5,50 @@
 		<title>马凤艳的个人博客</title>
 		<link rel="stylesheet" href="../public/css/base.css" />
 		<link rel="stylesheet" href="../public/css/aboutus.css" />
+		<script src="../scripts/scrollReveal.js"></script>
 	</head>
 	<body>
 		<!--头部的导航是确定的-->
 			<!--头部的导航是确定的-->
 		<header>
          <div class="logo" data-scroll-reveal="enter right over 1s"><a href="../index.html"><img src="../public/image/logo.png"></a></div>
-            <nav class="topnav" data-scroll-reveal="enter bottom over 1s after 1s"><a href="../index.html">
+            <nav class="topnav" data-scroll-reveal="enter bottom over 0.8s after 0.8s"><a href="../index.html">
         	<span>首页</span><span class="en">Home</span></a><a href="aboutme.html" class="active"><span>关于自己</span>
             <span class="en">AboutMe</span></a><a href="selfShare.html"><span>个人分享</span><span class="en">Life</span></a>
                <a href="ourStories.html"><span>我们的故事</span><span class="en">ourStories</span></a><a href="memory.html"><span>纪念日</span><span class="en">memoryData</span></a></nav>
      </header>
       <article>
       <div class="container">
-      	 <div class="topimg">
-      	 	<p>其实我们都是一对快乐的自己<br />其中一个是最喜欢的自己，一个是最讨厌的自己<br />你却不知道其实你很棒</p>
+      	 <div class="topimg" >
+      	 	<p data-scroll-reveal="enter bottom over 1s">其实我们都是一对快乐的自己<br />其中一个是最喜欢的自己，一个是最讨厌的自己<br />你却不知道其实你很棒</p>
       	 </div>
    
       <div class="center">
       	 <div class="timer">
+      	 	<div class="line"></div>
       	 	<ul >
       	 		<li  >
       	 			<p class="timeD"><span>2018.01.02</span></p>
-      	 			<span class="line"></span>
       	 			<span class="mark"></span>
       	 			<a href="">真心的你</a>
       	 		</li>
       	 			<li>
       	 			<p class="timeD"><span>2018.01.02</span></p>
-      	 			<span class="line"></span>
       	 			<span class="mark"></span>
       	 			<a href="">努力的你</a>
       	 		</li>
       	 			<li>
       	 			<p class="timeD"><span>2018.01.02</span></p>
-      	 			<span class="line"></span>
       	 			<span class="mark"></span>
       	 			<a href="">爱笑的你</a>
       	 		</li>
       	 			<li>
       	 			<p class="timeD"><span>2018.01.02</span></p>
-      	 			<span class="line"></span>
       	 			<span class="mark"></span>
       	 			<a href="">可爱的你</a>
       	 		</li>
+      	 			<span class="mark1"></span>
+      	 		 
       	 	</ul>
       	 </div>
       	 <div class="cen_content">	
@@ -56,7 +56,7 @@
       	    	<div class="cen_header">
       	    	    仅仅关于我
       	    	</div>
-      	    	<div class="cen_center">
+      	    	<div class="cen_center" data-scroll-reveal="enter bottom over 1s">
       	    		花半开最美，情留白最浓，懂得给生命留白，亦是一种生活的智慧。淡泊以明志，宁静以致远，懂得给心灵留白，方能在纷杂繁琐的世界，淡看得失，宠辱不惊，去意无留；懂得给感情留白，方能持久生香，留有余地，相互欣赏，拥有默契；懂得给生活留白，揽一份诗意，留一份淡定，多一份睿智，生命方能如诗如画。人心，远近相安，时光，浓淡相宜。有些风景要远观，才能美好；有些人情要淡然，才会久远，人生平淡更持久，留白方能生远，莲养心中，随遇而安，生命的最美不过是懂得的距离。
       	    	</div>
       	    </div>
@@ -64,7 +64,7 @@
       	    	<div class="cen_header">
       	    	    关于博客
       	    	</div>
-      	    	<div class="cen_center">
+      	    	<div class="cen_center" data-scroll-reveal="enter bottom over 1s">
       	    		 情绪是身体对行为成功的可能性乃至必然性，在生理反应上的评价和体验，包括喜、怒、忧、思、悲、恐、惊七种。行为在身体动作上表现的越强就说明其情绪越强，如喜会是手舞足蹈、怒会是咬牙切齿、忧会是茶饭不思、悲会是痛心疾首等等就是情绪在身体动作上的反应。生理反应是情绪存在的必要条件，为了证明这一点，心理学家给那些不会产生恐惧和回避行为的心理病态者注射了肾上腺素，结果这些心理病态者在注射了肾上腺素之后和正常人一样产生了恐惧，学会了回避任务。情感也是一样，比如没有性欲当然不会有爱情的，而当人吃了春药以后，伴随着性欲的旺盛一见钟情的可能性也就会随之加大了。所以，由不同的药物刺激引发的行为过程也表明了，情绪和情感显然是有区别的两种不尽一致的心理生理过程。情感不仅仅指人的喜怒哀乐，而是泛指人的一切感官的、机体的、心理的以及精神的感受。 [1] 
       	    	</div>
       	    </div>
@@ -74,5 +74,12 @@
       </div>
          </div>
      </article>
+      <script>
+	if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+		(function(){
+			window.scrollReveal = new scrollReveal({reset: true});
+		})();
+	};
+</script> 
 	</body>
 </html>

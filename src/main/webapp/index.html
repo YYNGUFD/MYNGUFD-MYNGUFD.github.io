@@ -5,20 +5,21 @@
 		<title>马凤艳的个人博客</title>
 		<link rel="stylesheet" href="./public/css/base.css" />
 		<link rel="stylesheet" href="./public/css/index.css" />
+		<script src="scripts/scrollReveal.js"></script>
 	</head>
 	<body>
 		<!--头部的导航是确定的-->
 		<header>
-         <div class="logo" data-scroll-reveal="enter right over 1s"><a href="#"><img src="./public/image/logo.png"></a></div>
-            <nav class="topnav" data-scroll-reveal="enter bottom over 1s after 1s"><a href="index.html" class="active">
+         <div class="logo" data-scroll-reveal="enter right over 0.8s"><a href="#"><img src="./public/image/logo.png"></a></div>
+            <nav class="topnav" data-scroll-reveal="enter bottom over 0.8s after 0.8s"><a href="index.html" class="active">
         	<span>首页</span><span class="en">Home</span></a><a href="./admin/aboutme.html"><span>关于自己</span>
-            <span class="en">AboutMe</span></a><a href="manshenghuo.html"><span>个人博客</span><span class="en">Life</span></a>
+            <span class="en">AboutMe</span></a><a href="./admin/selfShare.html"><span>个人分享</span><span class="en">Life</span></a>
                <a href="./admin/ourStories.html"><span>我们的故事</span><span class="en">studying</span></a> <a href="./admin/memory.html"><span>纪念日</span><span class="en">memoryData</span></a></nav>
      </header>
      <!--底部的内容-->
      <article>
       <div class="container">
-        <div class="blog" data-scroll-reveal="enter top" >
+        <div class="blog"   >
         	<div class="toparticle">
         	<figure>
         		<ul>
@@ -69,7 +70,7 @@
         				    	</div>
         					
         					</div>
-        					<div class="contentdetail">
+        					<div class="contentdetail"  data-scroll-reveal="enter right over 1s">
         						<span></span>
 					      	    <h5>这是一个故事不知道从何时想起，不知道从哪里说起， 也不知道该如何的选择</h5>
         					  <a href=""><img src="public/image/p02.jpg"/></a>
@@ -84,7 +85,7 @@
         				    	</div>
         					
         					</div>
-        					<div class="contentdetail">
+        					<div class="contentdetail"  data-scroll-reveal="enter right over 1s">
         						<span></span>
 					      	    <h5>这是一个故事不知道从何时想起，不知道从哪里说起， 也不知道该如何的选择</h5>
                              <a href=""><img src="public/image/p02.jpg"/></a>
@@ -98,7 +99,7 @@
         				    	</div>
         					
         					</div>
-        					<div class="contentdetail">
+        					<div class="contentdetail"  data-scroll-reveal="enter right over 1s">
         						<span></span>
 					      	    <h5>这是一个故事不知道从何时想起，不知道从哪里说起， 也不知道该如何的选择</h5>
         					<a href=""><img src="public/image/p02.jpg"/></a>
@@ -112,7 +113,7 @@
         				    	</div>
         					
         					</div>
-        					<div class="contentdetail">
+        					<div class="contentdetail"  data-scroll-reveal="enter right over 1s">
         						<span></span>
 					      	    <h5>这是一个故事不知道从何时想起，不知道从哪里说起， 也不知道该如何的选择</h5>
         					   <a href=""><img src="public/image/p02.jpg"/></a>
@@ -124,5 +125,13 @@
         </div>
      </div>
      </article>
+    <!--首页的动画-->
+    <script>
+	if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+		(function(){
+			window.scrollReveal = new scrollReveal({reset: true});
+		})();
+	};
+</script> 
 	</body>
 </html>

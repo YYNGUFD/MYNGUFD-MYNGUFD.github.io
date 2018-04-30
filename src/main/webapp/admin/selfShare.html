@@ -4,15 +4,15 @@
 		<meta charset="UTF-8">
 		<title>马凤艳的个人博客</title>
 		<link rel="stylesheet" href="../public/css/base.css" />
-	   <link rel="stylesheet" type="text/css" href="../public/css/index.css"/>
 		<link rel="stylesheet" href="../public/css/self.css" />
+		<script src="../scripts/scrollReveal.js"></script>
 	</head>
 	<body>
 		<!--头部的导航是确定的-->
 			<!--头部的导航是确定的-->
 		<header>
          <div class="logo" data-scroll-reveal="enter right over 1s"><a href="../index.html"><img src="../public/image/logo.png"></a></div>
-            <nav class="topnav" data-scroll-reveal="enter bottom over 1s after 1s"><a href="../index.html">
+             <nav class="topnav" data-scroll-reveal="enter bottom over 0.8s after 0.8s"><a href="../index.html">
         	<span>首页</span><span class="en">Home</span></a><a href="aboutme.html"  ><span>关于自己</span>
             <span class="en">AboutMe</span></a><a href="selfShare.html" class="active"><span>个人分享</span><span class="en">Life</span></a>
                <a href="ourStories.html"><span>我们的故事</span><span class="en">ourStories</span></a><a href="memory.html"><span>纪念日</span><span class="en">memoryData</span></a></nav>
@@ -25,17 +25,17 @@
       	 		<div style="clear: both;"></div>
       	 		<nav >
       	 			<ul >
-      	 				<li><a href="">个人生活</a></li>
-      	 				<li><a href="">每日寄语</a></li>
-      	 				<li><a href="">学习心得</a></li>
-      	 				<li><a href="">小小体会</a></li>
+      	 				<li><a href="#/selfLive"  id="selfLive">个人生活</a></li>
+      	 				<li><a href="#/selfLearn" id="selfLearn" >每日寄语</a></li>
+      	 				<li><a href="#/study" id="study">学习心得</a></li>
+      	 				<li><a href="#/selfLive" id="selfLive">小小体会</a></li>
       	 			</ul>
       	 		</nav>
       	 		 
       	 		<div class="detailContent">
       	 			<!--放内容的区域根据标签的点击不同，就放不同的内容-->
       	 			<!--个人生活就是展示一些图片-->
-      	 			<div class="selfLive hide">
+      	 			<div class="selfLive ">
       	 				  <!--展示一些图片，然后下面可以用一些文字表示出来-->
       	 				  <!--瀑布流模式的图片-->
       	 				  <div class="items">
@@ -57,7 +57,7 @@
       	 				  	</div>
       	 				  </div>
       	 			</div>
-      	 			<div class="selfLearn hide">
+      	 			<div class="selfLearn hide ">
       	 				<div>
       	 					<ul>
       	 						 <li>
@@ -69,9 +69,9 @@
         				    	</div>
         					
         					</div>
-        					<div class="contentdetail">
+        					<div class="contentdetail" data-scroll-reveal="enter right over 1s">
         						<span></span>
-        						 <p>这个图片是关于学校的图片，优美</p>
+        						 <p >这个图片是关于学校的图片，优美</p>
         					</div>
         				</li>
         				<li>
@@ -82,7 +82,7 @@
         				    	</div>
         					
         					</div>
-        					<div class="contentdetail">
+        					<div class="contentdetail" data-scroll-reveal="enter right over 1s">
         						<span></span>
         							<p>关于今天，就一直高兴着吧</p>
         					</div>
@@ -95,7 +95,7 @@
         				    	</div>
         					
         					</div>
-        					<div class="contentdetail">
+        					<div class="contentdetail" data-scroll-reveal="enter right over 1s">
         						<span></span>
         						<p>关于今天，就一直高兴着吧</p>
         					</div>
@@ -108,7 +108,7 @@
         				    	</div>
         					
         					</div>
-        					<div class="contentdetail">
+        					<div class="contentdetail" data-scroll-reveal="enter right over 1s">
         						<span></span>
         							<p>关于今天，就一直高兴着吧</p>
         					</div>
@@ -116,7 +116,7 @@
       	 					</ul>
       	 				</div>
       	 			</div>
-                    <div class="study">
+                    <div class="study hide">
 			        	 <figure>
 			        		<ul>
 			        		<a href=""><img src="../public/image/t02.jpg" alt="" /></a>
@@ -170,15 +170,42 @@
         	           	  <span class="rightli">></span>
         	           </div>
         	         </div>
+        	          <div class="realize hide">
+                          <!--暂时未开发系列-->   	
+                                                               还没有内容 
+                    </div>
                 </div>
              </div>
-                    <div class="realize">
-                             	
-                    </div>
+             
       	 		</div>
       	 	</div>
       	 	
       	 </div>
       </article>
+      <script src="../public/js/jquery.min.js"></script>
+       <script>
+	if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+		(function(){
+			window.scrollReveal = new scrollReveal({reset: true});
+		})();
+	};
+	//切换导航栏
+	$(function(){
+		//获取头部的导航栏
+		var aArr=$("nav ul li a");
+		console.log(aArr)
+//		获取下面的显示views
+        var divArr =  document.querySelectorAll(".detailContent>div");
+        console.log(divArr[1].className)
+		aArr.on('click',function(){
+			var href=this.href.split("#/")[1];
+//			其他的都不可见
+			for(var i=0;i<divArr.length;i++){
+				 divArr[i].style.display="none";
+			}
+			 document.querySelector(".detailContent>div."+href).style.display='block';
+		})
+	})
+</script> 
 	</body>
 </html>

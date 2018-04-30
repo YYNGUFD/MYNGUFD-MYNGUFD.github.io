@@ -28,6 +28,9 @@
 			.center{
 				margin-left: 30px;
 			}
+			.center .timer{
+				position:relative;
+			}
 			.center .timer ul{
 				height:110px;
 			}
@@ -36,6 +39,7 @@
 				width: 200px;
 				height:110px;
 				position: relative;
+				display: list-item;
 			}
 			.center .timer ul li p{
 				background-position: 47px 0px;
@@ -45,8 +49,8 @@
 				position: relative;
  		}
  		.center .timer ul li p span{
- 			display: block;
- 			background: url(../public/image/dtime.png) no-repeat right ;
+ 			 display: block;
+ 			 background: url(../public/image/dtime.png) no-repeat right ;
  			 height: 40px;
  			 font:16px/20px "楷体" ;
  			 padding: 3px;
@@ -54,9 +58,39 @@
  			 left: 53px;
  			 top: -2px;
  		}
-			.center .timer ul li .line{
-				display: block;
+		 .center .timer  .line{
+				width: 95%;
+				position: relative;
+                top: 54px;
+                right: 11px;				
 				border-bottom: 6px solid #FFFFFF;
+				animation: time_a 5s;
+				 -moz-animation: time_a 5s;
+				 -webkit-animation: time_a 5s;
+				 -o-animation: time_a 5s;
+			}
+			.center .timer ul::after{
+			 	content: "";
+			 	 display: block;
+				width: 12px;
+				height: 12px;
+				background: #075498;
+				border: 3px solid #ffffff;
+				border-radius: 50%;
+				position: absolute;right: 44px;
+				top: 47px;
+				 
+			 }
+			/*边框的动画*/
+			@keyframes time_a{
+				from{
+					width: 0%;
+					opacity: 0;
+				}
+				to{
+					width: 95%;
+					opacity: 1;
+				}
 			}
 			.center .timer ul li .mark{
 				display: block;

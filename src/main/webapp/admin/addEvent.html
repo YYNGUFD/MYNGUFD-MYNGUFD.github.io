@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>博客后台</title>
+		 <link rel="stylesheet" href="../public/css/base.css" />
+		 <style>
+		  .title{
+		  	width: 100%;
+		  	height: 60px;
+		  	font: 35px/60px  "楷体";
+		  	font-size: 700px;
+		  	text-shadow: -1px -2px #2A455D;
+		    letter-spacing:20px;
+		  	text-align: center;
+		  	border-bottom: 2px solid #ECECEC;
+		  } 
+		  .bot_container ul  {
+		  	float: left;
+		  	width: 100px;
+		  	text-align: center;
+		  	border-right: 2px solid #FFFFFF;
+		  	border-bottom: 2px solid #fff;
+		  } .bot_container ul  li{
+		  	height: 30px;
+		  	font: 18px/30px "楷体";
+		  }
+		  .bot_container ul  li:hover{
+		  	background: #0754ff;
+		  }
+		  .content{
+		  	padding: 10px;
+		  	margin-left: 10px;
+		  }
+		 </style>
+	</head>
+	<body>
+		<header>
+            <div class="logo" data-scroll-reveal="enter right over 1s"><a href="../index.html"><img src="../public/image/logo.png"></a></div>
+     </header>
+     <article>
+     	<div class="container">
+     		 <div style="font-size: 20px;" class="title"> 后台管理 </div>
+     		 <div class="bot_container">
+     		 	<!--操作-->	
+     		 	 <ul>
+     		 	 	<!--添加1：个人分享2:个人故事 3：我们的故事（旅行和日常）4纪念日-->
+     		 	 	<li><a href="" id="addShare">添加分享</a></li>
+     		 	 	<li><a href="" id="addStory">添加故事</a></li>
+     		 	 	<li><a href="" id="addTravel">添加旅行</a></li>
+     		 	 	<li><a href="" id="addDiary">添加日常</a></li>
+     		 	    <li><a href="" id="addRecord">添加记录</a></li>
+     		        <li><a href="" id="editMessage">编辑信息</a></li>
+     		 	 </ul>
+     		 
+     		 </div>
+     		 <div class="content">
+     		 	<!--个人分享-->
+     		 	<div class="addShare">
+     		 		分享包含的内容：
+     		 	</div>
+     		 	<div class="addStory">添加故事</div>
+     		 	<div class="addTravel">添加旅行</div>
+     		 	<div class="addDiary">添加日常</div>
+     		 	<div class="addRecord">添加记录</div>
+     		 	 <div class="editMessage">编辑信息</div>	
+     		  
+     		 </div>
+     	</div>
+     </article>
+	</body>
+</html>

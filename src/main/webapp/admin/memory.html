@@ -5,13 +5,14 @@
 		<title>马凤艳的个人博客</title>
 		<link rel="stylesheet" href="../public/css/base.css" />
 		 <link rel="stylesheet" href="../public/css/memory.css" />
+		 <script src="../scripts/scrollReveal.js"></script>
 	</head>
 	<body>
 		<!--头部的导航是确定的-->
 			<!--头部的导航是确定的-->
 		<header>
          <div class="logo" data-scroll-reveal="enter right over 1s"><a href="../index.html"><img src="../public/image/logo.png"></a></div>
-            <nav class="topnav" data-scroll-reveal="enter bottom over 1s after 1s"><a href="../index.html">
+            <nav class="topnav" data-scroll-reveal="enter bottom over 0.8s after 0.8s"><a href="../index.html">
         	<span>首页</span><span class="en">Home</span></a><a href="aboutme.html"  ><span>关于自己</span>
             <span class="en">AboutMe</span></a><a href="selfShare.html"><span>个人分享</span><span class="en">Life</span></a>
                <a href="ourStories.html"><span>我们的故事</span><span class="en">ourStories</span></a><a href="memory.html" class="active" ><span>纪念日</span><span class="en">memoryData</span></a></nav>
@@ -21,29 +22,36 @@
       	 	<!--//关于记忆的时间，包括时间、事件、地点-->
       	 	<div class="memory">
       	 	 <ul>
-      	 	 	<li>
+      	 	 	<li data-scroll-reveal="enter right over 1s" >
       	 	 		<span></span>
       	 	 		<span class="time">2017.5.6</span>
       	 	 		<p class="text">第一次</p>
       	 	 	</li>
-      	 	 	<li>
+      	 	 	<li data-scroll-reveal="enter right over 1s" >
       	 	 		<span></span>
       	 	 		<span class="time">2017.5.6</span>
       	 	 		<p class="text">第二次</p>
       	 	 	</li>
-      	 	 	<li>
+      	 	 	<li  data-scroll-reveal="enter right over 1s">
       	 	 		<span></span>
       	 	 		<span class="time">2017.5.6</span>
       	 	 		<p class="text">第三次</p>
       	 	 	</li>
-      	 	 	<li>
+      	 	 	<li data-scroll-reveal="enter right over 1s">
       	 	 		<span></span>
       	 	 		<span class="time">2017.5.6</span>
-      	 	 		<p class="text">第四次</p>
+      	 	 		 <p class="text"  >第四次</p>
       	 	 	</li>
       	 	 </ul>
       	 	 </div>
       	 </div>
       </article>
+       <script>
+	if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+		(function(){
+			window.scrollReveal = new scrollReveal({reset: true});
+		})();
+	};
+</script> 
 	</body>
 </html>
